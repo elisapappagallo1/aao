@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/aao
+
+idspace: AAO
+base_url: /obo/aao
+
+products:
+- aao.owl: https://raw.githubusercontent.com/elisapappagallo1/aao/main/aao.owl
+- aao.obo: https://raw.githubusercontent.com/elisapappagallo1/aao/main/aao.obo
+
+term_browser: ontobee
+example_terms:
+- AAO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/elisapappagallo1/aao/v
+
+- prefix: /tracker/
+  replacement: https://github.com/elisapappagallo1/aao/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/elisapappagallo1/aao/main/
