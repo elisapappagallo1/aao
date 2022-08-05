@@ -1,0 +1,36 @@
+Atlas,Authors,Date Published,Licence,Format,Additional formats,Publication,in vivo/ex vivo,Type of brain coordinates,Landmarks,Modality,Techniques,Processing_techniques,Parcellations,Subject,Reference animal quant,analysis compatibility,Atlas labels (y/n),Atlas label format,Relation to other atlases,data_access,Limitations,Description,Comments
+Marmoset brain mapping project_v3,Liu et al.,12/8/2020,CC BY-NC-SA 4.0,NIFTI,Online atlas viewer: https://marmosetbrainmapping.org/tools.html,https://doi.org/10.1016/j.neuroimage.2020.117620,in vivo,brain volume (3D image based),"cranial landmarks (bregma, auditory canal, infraorbital line)",multimodal,"MRI, CT imaging",The function created initial templates by averaging all raw individual images and then updated the templates iteratively using multivariate information from different image modalities. The final outputs included the multivariate templates and the transformation information from subject spaces to the template space.,"Version 1 parcellations (4: 
+13 Cortical areas;
+54 cortical areas;
+106 cortical areas;
+Paxinos );
+Riken cortical;
+20 subcortical",population,27,"FreeSurfer, AFNI/SUMA, and the Connectome Workbench",y,.xlsx  file accompanying each parcellation with abbreviation corresponding to the coordinates. Separate txt file with full names of the abbreviations,fusion of MBMv1 and Riken into the template space derived from the 27 marmosets,https://marmosetbrainmapping.org/,"1. Spatial resolution of in vivo MRI images is too limited to capture all anatomical structures
+2. Surface generating softwares incompatible with small brains so maps had to be created manually (how to reproduce?)
+3. 20 M, 7 F
+4. common cranial and brain landmarks, such as bregma and intraparietal sulcus, vary extensively in marmosets (Ose et. al 2022)
+",Population based template that provides standard coordinates for MRI and connectomy studies," existing parcellations mapped onto a new template brain that is the average of 27 marmosets
+"
+MarmosetRIKEN20_v1.0,Ose et al.,2/2/2022,CC BY 4.0,CIFTI,none,10.1016/j.neuroimage.2022.118965,in vivo,Grayordinates (3D image and 2D surface-based),"cranial and cortical landmarks
+AC-PC, midsagittal plane, grayordinates
+
+""head CT and brain MR images embedded in coordinate systems of anterior and posterior commissures (AC-PC) and CIFTI grayordinates",multimodal; brain and cranial imaging,"MRI, CT imaging",HCP_NHP pipeline,"116 Cortical areas (Paxinos)
+21 subcortical areas",population,20,Connectome workbench ,y,labels overlayed on cortical and subcortical parcellation files but no list of structures,- Parcellations in part based off of the histology atlas of Paxinos et al.,https://balsa.wustl.edu/V66g5,"still need to validate brain parcellations through combination of histology, functional connectivity, and imaging","CIFTI grayordinates account for intersubject variability in cortical curvature and total surface area. It preserves the topology of the cortical sheet and maps data onto standardized 2D surface 
+The cortical and subcortical parcellations were made using image contrasts of T1w and T2w and the histology atlas of Paxinos",Some of the Paxinos parcellations were confirmed by myelin contrasts (T1w/T2w) such as visual and somatosensory ares as well as many subcortical structures
+Marmoset brain mapping project_v1 (NIH-MBA),Liu et al.,4/1/2018,CC BY-NC-SA 4.0,NIFTI,none,https://doi.org/10.1016/j.neuroimage.2017.12.004,ex vivo,"AC-PC coordinate system, also a transformation that converted to stereotaxic coordinates",AC-PC,"multimodal brain imaging (magnetization transfer ratio, T2w, multi-shell diffusion mri)",MRI,"manual deliniation of regions of interest based on different image contrasts, compared to the hitological/cytoarchitectonic data previously available & refined boundaries","13 Cortical areas
+54 cortical areas
+106 cortical areas
+Paxinos
+""coarse"" subcortical atlas",single,1 as the template brain + 4 as the validation data set, AFNI and SUMA,n,,"-includes labels from the Paxinos atlas
+-uses similar nomenclature to paxinos",https://marmosetbrainmapping.org/atlas.html#v1,,"MRI based 3D digital atlas, template created from multimodal mri scans of a single marmoset brain, anatomical regions were manually delineated ","first move away from 2D histology, comparison of this atlas to previous ones"
+The Brain/Minds Atlas (BMA),Woodward et al.,2/13/2018,CC BY 4.0,"GIFT, NifTI",Online atlas viewer: https://dataportal.brainminds.jp/3d-atlas-viewer,10.1038/sdata.2018.9,ex vivo,"RAS coordinates (3D image based), x axis left tp right, y axis from posterior to anterior and z axis from inferior to superior; aligned to stereotaxic coordinates","cortical landmarks: AC-PC, cc, MB, DLG, 4th ventricle",multimodal; brain imaging and histology,"MRI, Nissl histology",NISSL histology images normalized to MRI data,"280 total; 114 cortical areas;
+Usemore of Paxinos parcellations than others",single,1,"Slicer (main), AFNI, FreeSurfer, or FSL
+
+Connectome workbench to view flatmaps",y,"A text file listing brain regions, giving parent/child structure, name, abbreviation and color.","Uses cytoarchitectonic data from https://brainatlas.brain.riken.jp/marmoset/modules/xoonips/listitem.php?index_id=66
+Improvements include mapping to MRI data and changing it to common NIFTI format making it compatible with many softwares, not just the custom proprietary software associatd with the original dataset;
+Labels based on the Paxinos nomenclature",https://dataportal.brainminds.jp/atlas-package-download-main-page/bma-2019-ex-vivo,-imaging not normalized to a reference modality but rather to the same brain from which samples were taken,This atlas uses the same Nissl and MRI data as the 3D atlas of the marmoset brain (RIKEN) that exists only in book form and using custom data/proprietary software. This atlas is smoother and more annotated and different data were normalized to MRI space,
+The Marmoset Brain in Stereotaxic Coordinates,"Paxinos, Watson, Petrides, Rosa,  Tokuno",2012,Copyright © 2012 Elsevier Inc. All rights reserved; ok to use images/nomenclature/abbreviations as long as properly cited,Print atlas,"Histological data as Zoomify files
+
+Processed and made available in a Common Atlas Format (CAF) by by Piotr Majka and Jakub Kowalski under supervision of Daniel Wojcik (Nencki Institute of Experimental Biology).
+
+An online atlas explorer of the parcellations has also been made available by by Marcello Rosa, Tristan Chaplin, Hsin-Hao Yu and Jonathan Chan (Department of Physiology, Monash University)- ",ISBN : 978-0-12-415818-4,ex vivo,Stereotaxic,"cranial landmarks (bregma, auditory canal, infraorbital line)",multimodal,"anatomy, histology, ex-vivo mri",,720 cortical and subcortical areas,single,1,3dBAR,y,List of structure appears in the publication. Atlases that use the Paxinos parcellation tend to use ~120 cortical areas,,The histology data that underly the atlas are available online at https://www.marmosetbrain.org (free registration required), significant bias and uncertainty due to positioning procedures when using the stereotactic method (Ose et. al 2022),,Carefully documented nomenclature and abbreviation procedures 
