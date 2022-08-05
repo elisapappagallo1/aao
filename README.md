@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/elisapappagallo1/aao/workflows/CI/badge.svg)
 # Anatomical Atlas Ontologies
 
-Description: None
+Description: Terminological mapping of marmoset anatomical structures from the Marmoset Brain Mapping Project Version 3 Atlas to the Uber Anatomy Ontology using a Simple Standard for Sharing Ontological Maps. Six maps are included of lists of increasingly refined structures as well as a mappingset metadata file and marmoset atlas metadata from 8 atlases.
 
 More information can be found at http://obofoundry.org/ontology/aao
 
